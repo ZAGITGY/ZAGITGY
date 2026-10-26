@@ -96,7 +96,9 @@ def main():
     check(not app[-1].xpath(".//w:tbl", namespaces=NS) and "ตรวจถูกต้อง" in ptext(
         next(p for p in reversed(paras) if "ตรวจถูกต้อง" in ptext(p))), "signature block is last")
 
-    # 3. Photos: each caption followed by a table of its 4 photos, unmodified, aspect kept.
+    # 3. Photos: each caption followed by a table of its 4 photos, unmodified, same
+    #    frame size, filled by cropping (never stretched).
+    frames = set()
     rels = etree.fromstring(oz.read("word/_rels/document.xml.rels"))
     target = {r.get("Id"): r.get("Target") for r in rels}
     seen = []
@@ -119,10 +121,16 @@ def main():
             check(sha == photos[name]["sha256"], "%s embedded byte-identical" % name)
             ext = i.find("wp:extent", NS)
             w, h = photos[name]["dimensions"]
+            rect = i.find(".//a:srcRect", NS)
+            l, t, r, b = (int(rect.get(k, 0)) / 100000 if rect is not None else 0 for k in "ltrb")
+            shown = w * (1 - l - r) / (h * (1 - t - b))  # aspect of the uncropped part
             ratio = int(ext.get("cx")) / int(ext.get("cy"))
-            check(abs(ratio - w / h) / (w / h) < 0.002, "%s aspect %.3f vs %.3f" % (name, ratio, w / h))
-            check(i.find(".//a:srcRect", NS) is None, "%s not cropped" % name)
+            check(abs(ratio - shown) / shown < 0.002,
+                  "%s not stretched (frame %.3f, shown part %.3f, keeps %d%% x %d%%)"
+                  % (name, ratio, shown, round(100 * (1 - l - r)), round(100 * (1 - t - b))))
+            frames.add((ext.get("cx"), ext.get("cy")))
             seen.append(sha)
+    check(len(frames) == 1, "all photos share one frame size %s" % sorted(frames))
     check(len(seen) == data["expected_main_photos"] == len(set(seen)),
           "%d photos, no duplicates" % len(seen))
     notes = {hashlib.sha256(open(os.path.join(src, a["note_file"]), "rb").read()).hexdigest()

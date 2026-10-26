@@ -5,7 +5,8 @@ Usage: python3 build_appendix.py <handoff_dir> <output.docx> [image_height_mm]
 Everything before the first appendix heading is left untouched. The old
 appendix (headings, captions, photos) is replaced with the activities in
 01_ACTIVITY_DATA.json, 3 activities per page, each caption above a single
-row of 4 inline photos in a borderless table. The closing "ตรวจถูกต้อง"
+centered row of 4 equal-size inline photos in a borderless table (photos of
+another shape are cropped to fill, never stretched). The closing "ตรวจถูกต้อง"
 signature block is carried over from the template unchanged.
 """
 import copy
@@ -22,6 +23,8 @@ from docx.shared import Mm
 APPENDIX_HEADING = "ภาคผนวก : รูปภาพกิจกรรมการปฏิบัติงาน นศท.จิตอาสา"
 PER_PAGE = 3
 GAP = Mm(4)  # horizontal space around each photo inside its cell
+FRAME_RATIO = 4 / 3  # every photo gets the same frame; most photos are 4:3
+PORTRAIT_TOP_SHARE = 0.5  # share of a vertical trim taken from the top
 EMU_PER_TWIP = 635
 
 
@@ -53,14 +56,29 @@ def set_single_run_text(p, text):
     r.append(t)
 
 
-def photo_table(part, paths, height):
-    sizes = []
-    for path in paths:
-        from PIL import Image
+def fill_crop(img_w, img_h, box_ratio, top_share):
+    """srcRect (l, t, r, b in 1/1000 %) that fills a box_ratio frame with the
+    photo without distorting it; vertical trims put top_share of the cut on top."""
+    ratio = img_w / img_h
+    if ratio > box_ratio:
+        side = round((1 - box_ratio / ratio) * 100000 / 2)
+        return side, 0, side, 0
+    cut = (1 - ratio / box_ratio) * 100000
+    top = round(cut * top_share)
+    return 0, top, 0, round(cut) - top
 
+
+def photo_table(part, paths, height):
+    """One row of equal frames (FRAME_RATIO, `height` tall); photos with another
+    shape are cropped in Word (reversible) to fill their frame."""
+    from PIL import Image
+
+    width = int(height * FRAME_RATIO)
+    crops = []
+    for path in paths:
         with Image.open(path) as im:
-            w, h = im.size
-        sizes.append((int(height * w / h), int(height)))
+            crops.append(fill_crop(*im.size, FRAME_RATIO, PORTRAIT_TOP_SHARE))
+    sizes = [(width, int(height))] * len(paths)
     cols = [(w + GAP) // EMU_PER_TWIP for w, _ in sizes]
     grid = "".join('<w:gridCol w:w="%d"/>' % c for c in cols)
     tbl = parse_xml(
@@ -77,9 +95,13 @@ def photo_table(part, paths, height):
         % (nsdecls("w"), sum(cols), grid)
     )
     tr = tbl.find(qn("w:tr"))
-    for path, (w, h), col in zip(paths, sizes, cols):
+    for path, (w, h), col, crop in zip(paths, sizes, cols, crops):
         inline = part.new_pic_inline(path, w, h)
         inline.docPr.set("descr", os.path.basename(path))
+        if any(crop):
+            blip_fill = inline.find(".//" + qn("pic:blipFill"))
+            src_rect = parse_xml('<a:srcRect %s l="%d" t="%d" r="%d" b="%d"/>' % ((nsdecls("a"),) + crop))
+            blip_fill.find(qn("a:blip")).addnext(src_rect)
         tc = parse_xml(
             "<w:tc %s><w:tcPr><w:tcW w:w=\"%d\" w:type=\"dxa\"/><w:vAlign w:val=\"center\"/></w:tcPr>"
             '<w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>'
