@@ -1,0 +1,430 @@
+{
+  "month": 7,
+  "appendix_month": "เดือน ก.ค. 69",
+  "template": "REPORT_TEMPLATE.docx",
+  "template_sha256": "d6d9f3167a45bd138e352b9c941dad8bba4225c3358a000d55ba1ae22d8f1bd6",
+  "expected_activities": 8,
+  "expected_main_photos": 32,
+  "output_docx": "RD_Volunteer_July2569_Appendix.docx",
+  "activities": [
+    {
+      "code": "A01",
+      "date": "2026-07-06",
+      "caption": "ภาพกิจกรรมที่ 1 นศท.รร.ศรีสองรักษ์วิทยา ร่วมกิจกรรมจิตอาสาบำเพ็ญประโยชน์ ช่วยงานประชุมประสังฆาธิการจังหวัดเลย ณ วัดโพนชัย",
+      "note_file": "SOURCE_NOTE_A01.jpg",
+      "main_files": [
+        "A01_P01_batch1_photo1.jpg",
+        "A01_P02_batch1_photo3.jpg",
+        "A01_P03_batch1_photo4.jpg",
+        "A01_P04_batch1_photo5.jpg"
+      ]
+    },
+    {
+      "code": "A02",
+      "date": "2026-07-07",
+      "caption": "ภาพกิจกรรมที่ 2 นศท.รร.ผาอินทร์แปลงวิทยา ร่วมกิจกรรมจิตอาสาช่วยงานบริจาคโลหิต สภากาชาดไทย ณ ที่ว่าการอำเภอเอราวัณ",
+      "note_file": "SOURCE_NOTE_A02.jpg",
+      "main_files": [
+        "A02_P01_batch2_photo1.jpg",
+        "A02_P02_batch2_photo4.jpg",
+        "A02_P03_batch2_photo2.jpg",
+        "A02_P04_batch2_photo5.jpg"
+      ]
+    },
+    {
+      "code": "A03",
+      "date": "2026-07-20",
+      "caption": "ภาพกิจกรรมที่ 3 นศท.จิตอาสา ร่วมพิธีเปิดกิจกรรมจิตอาสาพระราชทาน โครงการเติมโลหิตเพื่อชาติ 10 ล้านซีซี ณ สโมสรค่ายศรีสองรัก",
+      "note_file": "SOURCE_NOTE_A03.jpg",
+      "main_files": [
+        "A03_P01_batch3_photo5.jpg",
+        "A03_P02_batch3_photo3.jpg",
+        "A03_P03_batch3_photo2.jpg",
+        "A03_P04_batch3_photo6.jpg"
+      ]
+    },
+    {
+      "code": "A04",
+      "date": "2026-07-21",
+      "caption": "ภาพกิจกรรมที่ 4 นศท.ศฝ.ย่อย รร.ศรีสงครามวิทยา ร่วมบริจาคโลหิต โครงการเติมโลหิตเพื่อชาติ 10 ล้านซีซี ณ ห้องโสตทัศนศึกษา รร.ศรีสงครามวิทยา",
+      "note_file": "SOURCE_NOTE_A04.jpg",
+      "main_files": [
+        "A04_P01_batch4_photo6.jpg",
+        "A04_P02_batch4_photo2.jpg",
+        "A04_P03_batch4_photo5.jpg",
+        "A04_P04_batch4_photo4.jpg"
+      ]
+    },
+    {
+      "code": "A05",
+      "date": "2026-07-22",
+      "caption": "ภาพกิจกรรมที่ 5 นศท.รร.ศรีสองรักษ์วิทยา ร่วมให้การต้อนรับและลำเลียงถุงยังชีพมอบแก่ราษฎร ณ อุทยานเฉลิมพระเกียรติบ้านหมากแข่ง",
+      "note_file": "SOURCE_NOTE_A05.jpg",
+      "main_files": [
+        "A05_P01_batch5_photo3.jpg",
+        "A05_P02_batch5_photo1.jpg",
+        "A05_P03_batch5_photo2.jpg",
+        "A05_P04_batch5_photo4.jpg"
+      ]
+    },
+    {
+      "code": "A06",
+      "date": "2026-07-24",
+      "caption": "ภาพกิจกรรมที่ 6 นศท.รร.นาวังศึกษาวิช ปฏิบัติหน้าที่จิตอาสาจราจรและเดินขบวนถือธงชาติ ร่วมสืบสานประเพณีพุทธศาสนาและวัฒนธรรมไทย",
+      "note_file": "SOURCE_NOTE_A06.jpg",
+      "main_files": [
+        "A06_P01_batch6_photo7.jpg",
+        "A06_P02_batch6_photo2.jpg",
+        "A06_P03_batch6_photo5.jpg",
+        "A06_P04_batch6_photo8.jpg"
+      ]
+    },
+    {
+      "code": "A07",
+      "date": "2026-07-28",
+      "caption": "ภาพกิจกรรมที่ 7 นศท.รร.สันติวิทยาสรรพ์ ร่วมพิธีถวายพระพรชัยมงคลและปฏิบัติหน้าที่เข้าผ้าไตร ชุดไทยทาน ถ่ายบาตรพระสงฆ์ ณ หอประชุมอำเภอผาขาว",
+      "note_file": "SOURCE_NOTE_A07.jpg",
+      "main_files": [
+        "A07_P01_batch7_photo1.jpg",
+        "A07_P02_batch7_photo2.jpg",
+        "A07_P03_batch7_photo6.jpg",
+        "A07_P04_batch7_photo7.jpg"
+      ]
+    },
+    {
+      "code": "A08",
+      "date": "2026-07-28",
+      "caption": "ภาพกิจกรรมที่ 8 นศท.รร.หนองบัวพิทยาคาร ร่วมพิธีถวายพระพรชัยมงคลและเดินขบวนถือธงชาติ ร่วมสืบสานประเพณีพุทธศาสนาและวัฒนธรรมไทย",
+      "note_file": "SOURCE_NOTE_A08.jpg",
+      "main_files": [
+        "A08_P01_batch8_photo1.jpg",
+        "A08_P02_batch8_photo2.jpg",
+        "A08_P03_batch8_photo3.jpg",
+        "A08_P04_batch8_photo4.jpg"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "A01_P01_batch1_photo1.jpg",
+      "activity": "A01",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "2b434f76461a81a802a683056589da3e8f864347b2e67c62c2dee30543b6bcfc"
+    },
+    {
+      "file": "A01_P02_batch1_photo3.jpg",
+      "activity": "A01",
+      "order": 2,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "82b1ed2ca4c3c7e0e869c2e2d6b92095dfc0c03f569db4f9813e8ecc1bbe2813"
+    },
+    {
+      "file": "A01_P03_batch1_photo4.jpg",
+      "activity": "A01",
+      "order": 3,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "sha256": "83cf6105e4321d318c81fab3496e15d80dbe1fdbf03351937bc17806636b4af2"
+    },
+    {
+      "file": "A01_P04_batch1_photo5.jpg",
+      "activity": "A01",
+      "order": 4,
+      "dimensions": [
+        722,
+        1280
+      ],
+      "sha256": "226f253b85e6171e705bcab20acd5243f9436d425d812da3f7e92e51d2a7f527",
+      "crop_top": 0.3
+    },
+    {
+      "file": "A02_P01_batch2_photo1.jpg",
+      "activity": "A02",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "aed8a508b3f2b32a098c1c8954253a609718647f9b121c69f9edb7bb4903772f"
+    },
+    {
+      "file": "A02_P02_batch2_photo4.jpg",
+      "activity": "A02",
+      "order": 2,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "72d07427c112362b9c046790c24e948eac4405fd7b93655678dd54a00f76514b"
+    },
+    {
+      "file": "A02_P03_batch2_photo2.jpg",
+      "activity": "A02",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "6357b291f69351d68d41c211e11fa9155a093062fec99dc95e2d5c40f98c12b2"
+    },
+    {
+      "file": "A02_P04_batch2_photo5.jpg",
+      "activity": "A02",
+      "order": 4,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "110befff521b6235fbe578256b82f4c611da8dba5e39b4e259b597439d0de386"
+    },
+    {
+      "file": "A03_P01_batch3_photo5.jpg",
+      "activity": "A03",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "8e38bdbacb47450500c1a22b67f6d378feaff14a229c08fd4e648fc573c390de"
+    },
+    {
+      "file": "A03_P02_batch3_photo3.jpg",
+      "activity": "A03",
+      "order": 2,
+      "dimensions": [
+        1706,
+        960
+      ],
+      "sha256": "bf17ad002aa5893b9c4d1cf1ba2bbb98bdf873ccc7dafd80288f555f21f4e054"
+    },
+    {
+      "file": "A03_P03_batch3_photo2.jpg",
+      "activity": "A03",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "3020cdaf79172df9a2f3a8a42d4aef78faefdc3a105e8ff29ad4eeb350708d1e"
+    },
+    {
+      "file": "A03_P04_batch3_photo6.jpg",
+      "activity": "A03",
+      "order": 4,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "0d679ced89e28a15ec6c31a95f8df57027ee1d9b9b59851648f36f383a5cac5c"
+    },
+    {
+      "file": "A04_P01_batch4_photo6.jpg",
+      "activity": "A04",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "afa2dff80a0283c6876102d6967501806f5a83e6bfeb721c8f93a7439a7bca3b"
+    },
+    {
+      "file": "A04_P02_batch4_photo2.jpg",
+      "activity": "A04",
+      "order": 2,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "1970a040faae234e2824aa7b34fe714c10f40d1c2c1f27593d3a02b20226bd96"
+    },
+    {
+      "file": "A04_P03_batch4_photo5.jpg",
+      "activity": "A04",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "1ac4b9ad6e17a96d2f513df77a4f85146f920850bb27fec758736a7a8be941ff"
+    },
+    {
+      "file": "A04_P04_batch4_photo4.jpg",
+      "activity": "A04",
+      "order": 4,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "01385959f537fb6b52b1842d7c3a865a2245627b71a588ef677d03384b7dc54e"
+    },
+    {
+      "file": "A05_P01_batch5_photo3.jpg",
+      "activity": "A05",
+      "order": 1,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "sha256": "942fc8acdb875ccde94335d1529083f88b9a8025254be1177177126e2d414364"
+    },
+    {
+      "file": "A05_P02_batch5_photo1.jpg",
+      "activity": "A05",
+      "order": 2,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "sha256": "2a8262a9aa5ce94df7ca8f6bad983b761471ed1b73b3aa5efc4f561214ea6677"
+    },
+    {
+      "file": "A05_P03_batch5_photo2.jpg",
+      "activity": "A05",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "1b56651b84676fa9224a84b1d830fbe42360c7cf589112f3e7c854fdd60f62e1"
+    },
+    {
+      "file": "A05_P04_batch5_photo4.jpg",
+      "activity": "A05",
+      "order": 4,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "01a69a17050ebdae99c4216181f0d5f31f120851456422bd511d082355b8effc"
+    },
+    {
+      "file": "A06_P01_batch6_photo7.jpg",
+      "activity": "A06",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "8fc2d2e60e0dbb495a919b6b8d58d2f2a73415ea4e43493947c500fc22453896"
+    },
+    {
+      "file": "A06_P02_batch6_photo2.jpg",
+      "activity": "A06",
+      "order": 2,
+      "dimensions": [
+        1423,
+        1151
+      ],
+      "sha256": "225f77352dd8e67f83d11b8f4bed72feb9320de27aaae202ba99a18dbe3f35eb"
+    },
+    {
+      "file": "A06_P03_batch6_photo5.jpg",
+      "activity": "A06",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "b86ba4ae0da72257b9b0f2d2e68a4764dfa9e7fd7fd49fc5e6d28eda665ae295"
+    },
+    {
+      "file": "A06_P04_batch6_photo8.jpg",
+      "activity": "A06",
+      "order": 4,
+      "dimensions": [
+        1322,
+        1238
+      ],
+      "sha256": "c1ee23e2e5285aecf9adfa315cbab423f34d133990af29118981b709d29058ff"
+    },
+    {
+      "file": "A07_P01_batch7_photo1.jpg",
+      "activity": "A07",
+      "order": 1,
+      "dimensions": [
+        1907,
+        858
+      ],
+      "sha256": "9d5fd76553d1c5181c7ffb66793cb1eabf72da9840a43307be61ce277dc63154"
+    },
+    {
+      "file": "A07_P02_batch7_photo2.jpg",
+      "activity": "A07",
+      "order": 2,
+      "dimensions": [
+        1907,
+        858
+      ],
+      "sha256": "48d50f289fc35fb0646e29e73d82d90ef720bbd3daf474f652a3228cee84e800"
+    },
+    {
+      "file": "A07_P03_batch7_photo6.jpg",
+      "activity": "A07",
+      "order": 3,
+      "dimensions": [
+        1907,
+        858
+      ],
+      "sha256": "5c7e1adb3cdf897eab90fddb6e799e99daf12dabd86647ac80a1b759beffc49a"
+    },
+    {
+      "file": "A07_P04_batch7_photo7.jpg",
+      "activity": "A07",
+      "order": 4,
+      "dimensions": [
+        1907,
+        858
+      ],
+      "sha256": "24bb25dfd83ed73fab22d0e34cd1e997b541bcb308b684367f5fe18c96a1ec0e"
+    },
+    {
+      "file": "A08_P01_batch8_photo1.jpg",
+      "activity": "A08",
+      "order": 1,
+      "dimensions": [
+        1108,
+        1477
+      ],
+      "sha256": "8a3a6289dec91b5e8f9724752375dce63ec59adda64f0789b82145ca72724c3a"
+    },
+    {
+      "file": "A08_P02_batch8_photo2.jpg",
+      "activity": "A08",
+      "order": 2,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "1e0fcc88a16ce4dbbef5dea29f4f27960fd5b6c5ebdc32f0b247e0049fc2e49d"
+    },
+    {
+      "file": "A08_P03_batch8_photo3.jpg",
+      "activity": "A08",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "7891543b7e044be44ba9f383a0710631d5004d274abb90ed5d7daff6f019a10f"
+    },
+    {
+      "file": "A08_P04_batch8_photo4.jpg",
+      "activity": "A08",
+      "order": 4,
+      "dimensions": [
+        1108,
+        1477
+      ],
+      "sha256": "aedc07fbe1890d6da6536d5695b4ff3b561ec98ee582ef235e82abb368da6df2"
+    }
+  ]
+}

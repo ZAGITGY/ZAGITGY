@@ -85,8 +85,13 @@ def main():
     months = [ptext(app[i + 1]).strip() for i in heads]
     check(all(m == data["appendix_month"] for m in months),
           "month line under every heading = %r (%s)" % (data["appendix_month"], months))
-    app_text = "".join(ptext(p) for p in paras)
-    check("ก.ค." not in app_text, "no leftover ก.ค. text in appendix")
+    t_app = t_els[ts:-1]
+    old_caps = {ptext(p).strip() for p in t_app if ptext(p).startswith("ภาพกิจกรรมที่")}
+    left = [ptext(p).strip() for p in paras if ptext(p).strip() in old_caps]
+    check(not left, "no template caption left in appendix %s" % left)
+    if data["appendix_month"] != ptext(t_app[1]).strip():
+        app_text = "".join(ptext(p) for p in paras)
+        check(ptext(t_app[1]).strip() not in app_text, "no leftover template month line in appendix")
     captions = [ptext(p) for p in paras if ptext(p).startswith("ภาพกิจกรรมที่")]
     check(captions == [a["caption"] for a in data["activities"]],
           "captions exactly as given, in order (%d)" % len(captions))

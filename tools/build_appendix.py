@@ -68,16 +68,16 @@ def fill_crop(img_w, img_h, box_ratio, top_share):
     return 0, top, 0, round(cut) - top
 
 
-def photo_table(part, paths, height):
+def photo_table(part, paths, height, top_shares):
     """One row of equal frames (FRAME_RATIO, `height` tall); photos with another
     shape are cropped in Word (reversible) to fill their frame."""
     from PIL import Image
 
     width = int(height * FRAME_RATIO)
     crops = []
-    for path in paths:
+    for path, top_share in zip(paths, top_shares):
         with Image.open(path) as im:
-            crops.append(fill_crop(*im.size, FRAME_RATIO, PORTRAIT_TOP_SHARE))
+            crops.append(fill_crop(*im.size, FRAME_RATIO, top_share))
     sizes = [(width, int(height))] * len(paths)
     cols = [(w + GAP) // EMU_PER_TWIP for w, _ in sizes]
     grid = "".join('<w:gridCol w:w="%d"/>' % c for c in cols)
@@ -149,6 +149,7 @@ def main():
 
     new = []
     acts = data["activities"]
+    crop_top = {p["file"]: p["crop_top"] for p in data.get("photos", []) if "crop_top" in p}
     for n, act in enumerate(acts):
         if n % PER_PAGE == 0:
             h = copy.deepcopy(heading_tpl)
@@ -167,7 +168,9 @@ def main():
             sp.set(qn("w:before"), "160")
         new.append(c)
         paths = [os.path.join(src, f) for f in act["main_files"]]
-        new.append(photo_table(doc.part, paths, height))
+        # a photo entry may set crop_top (0 = keep the top) when the default cut hides a face
+        shares = [crop_top.get(f, PORTRAIT_TOP_SHARE) for f in act["main_files"]]
+        new.append(photo_table(doc.part, paths, height, shares))
     new += closing
 
     for e in new:

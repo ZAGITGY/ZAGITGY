@@ -1,0 +1,46 @@
+July 2569 intake (build only after user says all batches are in)
+batch1: 6 ก.ค. 69 0900-1200 (note) | รร.ศรีสองรักษ์วิทยา | วัดโพนชัย ต.ด่านซ้าย อ.ด่านซ้าย จ.เลย
+  ผช.ผกท. 2 นาย, นศท.ชั้นปีที่ 3 25 นาย | ช่วยงานประชุมประสังฆาธิการจังหวัดเลย
+  photos: photo1 group at Phon Chai backdrop (L), photo2 monks eating, no cadets (L 16:9),
+          photo3 cadet carrying bags (L), photo4 cadets carrying food (L 16:9), photo5 cadet with water (P 9:16)
+  proposed 4: photo1, photo3, photo4, photo5 (drop photo2)
+  table row 1 differs: says 0900-1100 and วัดโพนสูง (table must stay unchanged)
+batch2: 7 ก.ค. 69 0900-1200 | รร.ผาอินทร์แปลงวิทยา | ที่ว่าการอำเภอเอราวัณ อ.เอราวัณ จ.เลย (table: หอประชุม อ.เอราวัณ)
+  ผกท. 1 นาย, นศท.ชั้นปีที่ 1-3 27 นาย | ช่วยงานบริจาคโลหิต สภากาชาดไทย
+  photos: photo1 group + cadet donating (L), photo2 cadet serving drinks (L), photo3 two cadets at table posing (L),
+          photo4 cadets setting up donor beds (L), photo5 cadets loading boxes to EMS van (L), photo6 cadet donating w/ officials (L)
+  chosen 4: photo1, photo4, photo2, photo5 (drop photo3, photo6)
+batch3: 20 ก.ค. 69 0900-1200 | พิธีเปิดกิจกรรมจิตอาสาพระราชทาน โครงการเติมโลหิตเพื่อชาติ 10 ล้านซีซี | สโมสรค่ายศรีสองรัก อ.เมือง จ.เลย
+  นศท. 120 นาย จาก รร.มหาไถ่ศึกษาเลย, รร.วิทยาศาสตร์จุฬาภรณราชวิทยาลัยเลย, ว.เทคนิคเลย; ประธาน พล.ต.ประเสริฐ สิงขรเขียว ผบ.มทบ.28
+  photos: photo1 royal portrait/altar, no people; photo2 chairman salute, cadets behind; photo3 wide salute to portrait;
+          photo4 chairman reading at mic; photo5 wide ceremony lineup; photo6 cadets in line w/ yellow scarves
+  chosen 4: photo5, photo3, photo2, photo6 (drop photo1, photo4); no actual donation photos in batch
+batch4: 21 ก.ค. 69 0900-1200 | ศฝ.ย่อย รร.ศรีสงครามวิทยา อ.วังสะพุง | ห้องโสตทัศนศึกษา รร.ศรีสงครามวิทยา | เติมโลหิตเพื่อชาติ 10 ล้านซีซี
+  note: นศท.บริจาคจริง 53 นาย จากยอดในศูนย์ 395 นาย, ได้โลหิต 18,550 ซีซี. TABLE row 4 says 153 นาย (mismatch)
+  photos screen shows "20 กรกฎาคม 2569" campaign graphic -> confirm photos are from 21st
+  photos: photo1 wide room, donors, screen; photo2 cadets filling forms; photo3 two officers seated (no cadets);
+          photo4 cadet donating drinking juice; photo5 nurse prepping cadet arm; photo6 3 donors incl cadet, screen
+  chosen 4: photo6, photo2, photo5, photo4 (drop photo1 similar to 6, photo3 no cadets)
+batch5: NOTE DATE ๑๙ ก.ค. ๒๕๖๙ 08.00-14.00 vs TABLE row 5 = 22 ก.ค. 69 0800-1400 (ask user) | รร.ศรีสองรักษ์วิทยา
+  อุทยานเฉลิมพระเกียรติบ้านหมากแข่ง (table: บ.หมากแข้ง ต.กกสะทอน) | ผกท. 2, นศท.ชั้นปีที่ 2-3 30 นาย
+  ต้อนรับ ผบ.ทสส./ผบ.เหล่าทัพ/ผบ.ตร. มอบถุงยังชีพ ตรวจเยี่ยมราษฎร; cadets ลำเลียงถุงยังชีพ
+  photos: photo1 cadets in line under tent, villagers seated (16:9); photo2 cadets handing bags to villagers;
+          photo3 cadets lined along table of bags (16:9); photo4 commanders at Buddha statues, cadets with offerings;
+          photo5 commanders seated wai, no cadets
+  chosen 4: photo3, photo1, photo2, photo4 (drop photo5)
+batch6: 24 ก.ค. 2569 13.00-15.00 | รร.นาวังศึกษาวิช | วัดมัชฌิมเขตมงคล ม.1 ต.นาเหล่า อ.นาวัง จ.หนองบัวลำภู (table: ถนนเลย-นาวัง)
+  ผกท. 5, นศท.ชั้นปีที่ 2-3 26 นาย | จิตอาสาจราจร + เดินขบวนถือธงชาติ สืบสานประเพณีพุทธศาสนาและวัฒนธรรมไทย (float: แห่เทียนเข้าพรรษา)
+  photos: photo1 flag cadets at school sign; photo2 flag cadets on road w/ float; photo3 police thumbs-up w/ flag cadets;
+          photo4 same as 3 + vest cadet; photo5 two traffic cadets beside float; photo6 single traffic cadet portrait;
+          photo7 flag formation on road; photo8 traffic cadet guiding walking students
+  chosen 4: photo7, photo2, photo5, photo8 (drop 1, 3, 4, 6)
+batch7: 28 ก.ค. 2569 07.00-10.00 | รร.สันติวิทยาสรรพ์ | หอประชุมอำเภอผาขาว อ.ผาขาว จ.เลย
+  ผกท. 5, นศท.ชั้นปีที่ 1-3 60 นาย | พิธีถวายพระพรชัยมงคล + เข้าผ้าไตร ชุดไทยทาน รับบาตรถ่ายของจากบาตรพระ
+  photos (1-6 panoramic ~2.22:1): photo1 cadets carrying ไทยทาน buckets; photo2 kneeling offering to monks; photo3 kneeling (dup of 2);
+          photo4 standing before monks; photo5 walking in file; photo6 receiving items from monks' bowls outdoors; photo7 group w/ officials
+  chosen 4: photo1, photo2, photo6, photo7 (drop 3, 4, 5)
+batch8: NOTE DATE 27 ก.ค. 2569 08.00-10.00 และ 14.00-16.00 vs TABLE row "9." = 28 ก.ค. 1400-1600 (ask) | รร.หนองบัวพิทยาคาร
+  หอประชุม 50 ปี รร.หนองบัวพิทยาคาร และ วัดป่าธรรมาวาส อ.เมือง จ.หนองบัวลำภู | ผกท. 5, นศท.ชั้นปีที่ 1-2 120 นาย
+  ถวายพระพรชัยมงคล + เดินขบวนถือธงชาติ สืบสานประเพณีพุทธศาสนาและวัฒนธรรมไทย
+  photos (only 4): photo1 honor guard at royal portrait (P 3:4); photo2 flag column close (L); photo3 flag column wide (L); photo4 marching (P 3:4)
+  chosen 4: photo1, photo2, photo3, photo4 (all; 2 and 3 similar)
