@@ -28,6 +28,15 @@ PORTRAIT_TOP_SHARE = 0.5  # share of a vertical trim taken from the top
 EMU_PER_TWIP = 635
 
 
+def page_starts(count):
+    """Indexes of the activities that open an appendix page: PER_PAGE per page,
+    except that the last page keeps room for the signature block below it."""
+    sizes = [PER_PAGE] * (count // PER_PAGE) + ([count % PER_PAGE] if count % PER_PAGE else [])
+    if sizes and sizes[-1] == PER_PAGE:
+        sizes[-1:] = [PER_PAGE - 1, 1]
+    return {sum(sizes[:i]) for i in range(len(sizes))}
+
+
 def para_text(p):
     return "".join(t.text or "" for t in p.iter(qn("w:t")))
 
@@ -150,8 +159,9 @@ def main():
     new = []
     acts = data["activities"]
     crop_top = {p["file"]: p["crop_top"] for p in data.get("photos", []) if "crop_top" in p}
+    starts = page_starts(len(acts))
     for n, act in enumerate(acts):
-        if n % PER_PAGE == 0:
+        if n in starts:
             h = copy.deepcopy(heading_tpl)
             for lr in h.iter(qn("w:lastRenderedPageBreak")):
                 lr.getparent().remove(lr)
@@ -163,7 +173,7 @@ def main():
         c = copy.deepcopy(caption_tpl)
         set_single_run_text(c, act["caption"])
         ensure_ppr_child(c, "w:keepNext")
-        if n % PER_PAGE:
+        if n not in starts:
             sp = c.find(qn("w:pPr")).find(qn("w:spacing"))
             sp.set(qn("w:before"), "160")
         new.append(c)

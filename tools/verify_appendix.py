@@ -80,7 +80,8 @@ def main():
     app = o_els[os_:-1]
     paras = [e for e in app if e.tag == "{%s}p" % W]
     heads = [i for i, e in enumerate(app) if e.tag == "{%s}p" % W and ptext(e).strip() == HEADING]
-    pages = -(-len(data["activities"]) // 3)
+    n = len(data["activities"])
+    pages = -(-n // 3) + (1 if n % 3 == 0 else 0)  # a full last page leaves the signature no room
     check(len(heads) == pages, "appendix headings: %d (expected %d pages)" % (len(heads), pages))
     months = [ptext(app[i + 1]).strip() for i in heads]
     check(all(m == data["appendix_month"] for m in months),
@@ -139,7 +140,7 @@ def main():
     check(len(seen) == data["expected_main_photos"] == len(set(seen)),
           "%d photos, no duplicates" % len(seen))
     notes = {hashlib.sha256(open(os.path.join(src, a["note_file"]), "rb").read()).hexdigest()
-             for a in data["activities"]}
+             for a in data["activities"] if a.get("note_file")}
     check(not notes & set(seen), "no SOURCE_NOTE image used as a photo")
     media = [n for n in oz.namelist() if n.startswith("word/media/")]
     check(len(media) == len(seen), "no leftover old media (%d files)" % len(media))

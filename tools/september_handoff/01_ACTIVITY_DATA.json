@@ -1,0 +1,180 @@
+{
+  "month": 9,
+  "month_name": "กันยายน",
+  "year_BE": 2569,
+  "scope": "ข้อมูลปิดครบตามที่ผู้ใช้ยืนยัน ใช้กิจกรรมในชุดนี้ทั้งหมด ไม่ต้องรอหรือขอกิจกรรมเพิ่ม",
+  "appendix_heading": "ภาคผนวก : รูปภาพกิจกรรมการปฏิบัติงาน นศท.จิตอาสา",
+  "appendix_month": "เดือน ก.ย. 69",
+  "template": "REPORT_TEMPLATE.docx",
+  "expected_activities": 3,
+  "expected_main_photos": 11,
+  "output_docx": "RD_Volunteer_September2569_Appendix.docx",
+  "activities": [
+    {
+      "code": "A01",
+      "date": "2026-09-06",
+      "time": "08.00–14.00 น.",
+      "school": "รร.ศรีสองรักษ์วิทยา",
+      "place": "สำนักสงฆ์เฉลิมราษฎร์สามัคคี บ้านหนองฟ้าแลบ อ.ด่านซ้าย จ.เลย",
+      "summary": "บำเพ็ญประโยชน์และอำนวยความสะดวกในกิจกรรมบำเพ็ญกุศลทักษิณานุปทานและทอดผ้าป่าสามัคคี",
+      "caption": "ภาพกิจกรรมที่ 1 นศท.รร.ศรีสองรักษ์วิทยา ร่วมบำเพ็ญประโยชน์และอำนวยความสะดวก ณ สำนักสงฆ์เฉลิมราษฎร์สามัคคี",
+      "note_file": "SOURCE_NOTE_A01.jpeg",
+      "main_files": [
+        "A01_P01_IMG_2587_1_.jpeg",
+        "A01_P02_IMG_2589_1_.jpeg",
+        "A01_P03_IMG_2591.jpeg",
+        "A01_P04_IMG_2590_1_.jpeg"
+      ]
+    },
+    {
+      "code": "A02",
+      "date": "2026-09-17",
+      "time": "10.00 น. ไม่ระบุเวลาสิ้นสุด",
+      "school": "รร.วังโพนงามวิทยา และ รร.นาแห้ววิทยา",
+      "place": "สนามฝึก นฝ.นศท.มทบ.28",
+      "summary": "ครูฝึก ผกท. และ นศท.จิตอาสา ร่วมปลูกต้นไม้เพื่อฟื้นฟูและอนุรักษ์ธรรมชาติและเพิ่มความร่มรื่นในหน่วย",
+      "caption": "ภาพกิจกรรมที่ 2 นศท.รร.วังโพนงามวิทยา และ รร.นาแห้ววิทยา ร่วมกิจกรรมปลูกต้นไม้ ณ สนามฝึก นฝ.นศท.มทบ.28",
+      "note_file": "SOURCE_NOTE_A02.jpeg",
+      "main_files": [
+        "A02_P01_IMG_2599_ready.jpg",
+        "A02_P02_IMG_2603_ready.jpg",
+        "A02_P03_IMG_2604.jpeg",
+        "A02_P04_IMG_2598_ready.jpg"
+      ]
+    },
+    {
+      "code": "A03",
+      "date": "2026-09-18",
+      "school": "นศท.จิตอาสา (ไม่ระบุโรงเรียน)",
+      "place": "นฝ.นศท.มทบ.28",
+      "summary": "กิจกรรมจัดตั้งเครือข่ายคนรักษ์ต้นไม้ตามรอยพ่อ ภาคตะวันออกเฉียงเหนือ และโครงการปลูกต้นยางนาและไม้มีค่าเฉลิมพระเกียรติ (จากป้ายในภาพ)",
+      "caption": "ภาพกิจกรรมที่ 3 นศท.จิตอาสา ร่วมกิจกรรมจัดตั้งเครือข่ายคนรักษ์ต้นไม้ตามรอยพ่อ และปลูกต้นยางนาและไม้มีค่าเฉลิมพระเกียรติ ณ นฝ.นศท.มทบ.28",
+      "main_files": [
+        "A03_P01_photo1.jpg",
+        "A03_P02_photo2.jpg",
+        "A03_P03_photo4.jpg"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "A01_P01_IMG_2587_1_.jpeg",
+      "activity": "A01",
+      "order": 1,
+      "bytes": 614080,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "d9acaa126d31b8add4e83fddabf4833ba06ff751aa671680ac531630bd4ebd2a"
+    },
+    {
+      "file": "A01_P02_IMG_2589_1_.jpeg",
+      "activity": "A01",
+      "order": 2,
+      "bytes": 397150,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "sha256": "2cb358176dea735bb58c977b412344362c00c787ecfbf3cb09d9f9f2fd463353"
+    },
+    {
+      "file": "A01_P03_IMG_2591.jpeg",
+      "activity": "A01",
+      "order": 3,
+      "bytes": 391561,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "sha256": "c929849c86b9aafcfc250530a8086c4a9116b051ddc05969ef81ece78bb96420"
+    },
+    {
+      "file": "A01_P04_IMG_2590_1_.jpeg",
+      "activity": "A01",
+      "order": 4,
+      "bytes": 303110,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "sha256": "cae6404e688c56a61896c42963089040d3de7d403c950255c0a85210984f97b2"
+    },
+    {
+      "file": "A02_P01_IMG_2599_ready.jpg",
+      "activity": "A02",
+      "order": 1,
+      "bytes": 412728,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "64853a43d7eb51b74b6da1aac4071fd2a11e866304501835940b03b53ed7b6ed"
+    },
+    {
+      "file": "A02_P02_IMG_2603_ready.jpg",
+      "activity": "A02",
+      "order": 2,
+      "bytes": 693154,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "0d9fc0cf07c6184799b212b05ccd1188f763f2a0d4c603b752ed56e8f3d03f0f"
+    },
+    {
+      "file": "A02_P03_IMG_2604.jpeg",
+      "activity": "A02",
+      "order": 3,
+      "bytes": 580682,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "c41bb34c5c492f6bf448cbaa03dd572c1eff0912f78a4ea202970d4b306485e1"
+    },
+    {
+      "file": "A02_P04_IMG_2598_ready.jpg",
+      "activity": "A02",
+      "order": 4,
+      "bytes": 499608,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "68319f8f7e8e66291ad8a34bce031365e6728e9b3dd11730b71a54ee61566603"
+    },
+    {
+      "file": "A03_P01_photo1.jpg",
+      "activity": "A03",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "e402bfcc215bfd75db034426e63fd1cd21ff5223a9b496c2906739e70d1221d0"
+    },
+    {
+      "file": "A03_P02_photo2.jpg",
+      "activity": "A03",
+      "order": 2,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "f25b4016f97381780371f7c933ccf9d72388e1339f46e58f0cbaacf270b89100"
+    },
+    {
+      "file": "A03_P03_photo4.jpg",
+      "activity": "A03",
+      "order": 3,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "9374ff64afd9a7976a701673416c6d97b0b4e21d0053bcab4f53bcf4a64bf565"
+    }
+  ],
+  "template_sha256": "d6d9f3167a45bd138e352b9c941dad8bba4225c3358a000d55ba1ae22d8f1bd6"
+}
