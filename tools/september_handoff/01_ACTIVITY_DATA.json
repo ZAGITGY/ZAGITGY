@@ -7,7 +7,7 @@
   "appendix_month": "เดือน ก.ย. 69",
   "template": "REPORT_TEMPLATE.docx",
   "expected_activities": 3,
-  "expected_main_photos": 11,
+  "expected_main_photos": 12,
   "output_docx": "RD_Volunteer_September2569_Appendix.docx",
   "activities": [
     {
@@ -52,7 +52,8 @@
       "main_files": [
         "A03_P01_photo1.jpg",
         "A03_P02_photo2.jpg",
-        "A03_P03_photo4.jpg"
+        "A03_P03_photo4.jpg",
+        "A03_P04_photo5.jpg"
       ]
     }
   ],
@@ -174,6 +175,16 @@
         1108
       ],
       "sha256": "9374ff64afd9a7976a701673416c6d97b0b4e21d0053bcab4f53bcf4a64bf565"
+    },
+    {
+      "file": "A03_P04_photo5.jpg",
+      "activity": "A03",
+      "order": 4,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "9258ccd18af6d5f8584a6809513d7b1fecfec2e990234ea2f993a3607de0d9f5"
     }
   ],
   "template_sha256": "d6d9f3167a45bd138e352b9c941dad8bba4225c3358a000d55ba1ae22d8f1bd6"
