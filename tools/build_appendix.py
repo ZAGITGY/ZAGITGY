@@ -23,7 +23,7 @@ from docx.shared import Mm
 APPENDIX_HEADING = "ภาคผนวก : รูปภาพกิจกรรมการปฏิบัติงาน นศท.จิตอาสา"
 PER_PAGE = 3
 GAP = Mm(4)  # horizontal space around each photo inside its cell
-FRAME_RATIO = 4 / 3  # every photo gets the same frame; most photos are 4:3
+FRAME_RATIO = 4 / 3  # every photo gets the same frame; 01_ACTIVITY_DATA.json may set "frame_ratio"
 PORTRAIT_TOP_SHARE = 0.5  # share of a vertical trim taken from the top
 EMU_PER_TWIP = 635
 
@@ -77,16 +77,16 @@ def fill_crop(img_w, img_h, box_ratio, top_share):
     return 0, top, 0, round(cut) - top
 
 
-def photo_table(part, paths, height, top_shares):
-    """One row of equal frames (FRAME_RATIO, `height` tall); photos with another
+def photo_table(part, paths, height, top_shares, ratio=FRAME_RATIO):
+    """One row of equal frames (`ratio`, `height` tall); photos with another
     shape are cropped in Word (reversible) to fill their frame."""
     from PIL import Image
 
-    width = int(height * FRAME_RATIO)
+    width = int(height * ratio)
     crops = []
     for path, top_share in zip(paths, top_shares):
         with Image.open(path) as im:
-            crops.append(fill_crop(*im.size, FRAME_RATIO, top_share))
+            crops.append(fill_crop(*im.size, ratio, top_share))
     sizes = [(width, int(height))] * len(paths)
     cols = [(w + GAP) // EMU_PER_TWIP for w, _ in sizes]
     grid = "".join('<w:gridCol w:w="%d"/>' % c for c in cols)
@@ -124,8 +124,9 @@ def photo_table(part, paths, height, top_shares):
 
 def main():
     src, out = sys.argv[1], sys.argv[2]
-    height = Mm(float(sys.argv[3]) if len(sys.argv) > 3 else 38)
     data = json.load(open(os.path.join(src, "01_ACTIVITY_DATA.json"), encoding="utf-8"))
+    height = Mm(float(sys.argv[3]) if len(sys.argv) > 3 else data.get("photo_height_mm", 38))
+    ratio = data.get("frame_ratio", FRAME_RATIO)
     template = os.path.join(src, data["template"])
     assert os.path.abspath(out) != os.path.abspath(template)
 
@@ -180,7 +181,7 @@ def main():
         paths = [os.path.join(src, f) for f in act["main_files"]]
         # a photo entry may set crop_top (0 = keep the top) when the default cut hides a face
         shares = [crop_top.get(f, PORTRAIT_TOP_SHARE) for f in act["main_files"]]
-        new.append(photo_table(doc.part, paths, height, shares))
+        new.append(photo_table(doc.part, paths, height, shares, ratio))
     new += closing
 
     for e in new:

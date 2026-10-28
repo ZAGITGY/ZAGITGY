@@ -1,0 +1,170 @@
+{
+  "month": 10,
+  "appendix_month": "เดือน ต.ค. 69",
+  "template": "REPORT_TEMPLATE.docx",
+  "template_sha256": "d6d9f3167a45bd138e352b9c941dad8bba4225c3358a000d55ba1ae22d8f1bd6",
+  "frame_ratio": 1.7777777777777777,
+  "photo_height_mm": 34,
+  "expected_activities": 3,
+  "expected_main_photos": 12,
+  "activities": [
+    {
+      "code": "A01",
+      "date": "2026-10-08",
+      "caption": "ภาพกิจกรรมที่ 1 นศท.จิตอาสา ร่วมกิจกรรม รด.จิตอาสา อำนวยความสะดวกแก่ผู้ป่วยและประชาชน และสนับสนุนภารกิจของโรงพยาบาล ณ โรงพยาบาลค่ายศรีสองรัก",
+      "note_file": "SOURCE_NOTE_A01.txt",
+      "main_files": [
+        "A01_P01_IMG_2681.png",
+        "A01_P02_IMG_2683.png",
+        "A01_P03_IMG_2682.png",
+        "A01_P04_IMG_2687.png"
+      ]
+    },
+    {
+      "code": "A02",
+      "date": "2026-10-09",
+      "caption": "ภาพกิจกรรมที่ 2 นศท.จิตอาสา ร่วมโครงการ รด.จิตอาสาพัฒนา เพื่อช่วยเหลือโรงพยาบาลในพื้นที่รับผิดชอบ ณ โรงพยาบาลเลย",
+      "note_file": "SOURCE_NOTE_A02.txt",
+      "main_files": [
+        "A02_P01_IMG_2688.jpeg",
+        "A02_P02_IMG_2696.jpeg",
+        "A02_P03_IMG_2689.png",
+        "A02_P04_IMG_2692.jpeg"
+      ]
+    },
+    {
+      "code": "A03",
+      "date": "2026-10-15",
+      "caption": "ภาพกิจกรรมที่ 3 นศท.รร.เลยพิทยาคม ร่วมโครงการ รด.จิตอาสาพัฒนา เพื่อช่วยเหลือโรงพยาบาลในพื้นที่รับผิดชอบ ณ โรงพยาบาลค่ายศรีสองรัก",
+      "note_file": "SOURCE_NOTE_A03.txt",
+      "main_files": [
+        "A03_P01_IMG_2710.png",
+        "A03_P02_IMG_2700.jpeg",
+        "A03_P03_IMG_2704.jpeg",
+        "A03_P04_IMG_2703.jpeg"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "A01_P01_IMG_2681.png",
+      "activity": "A01",
+      "order": 1,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "6ffa0318f05202196c35cd53edbdd66491c86476dc1e06478959ccac409c46d1"
+    },
+    {
+      "file": "A01_P02_IMG_2683.png",
+      "activity": "A01",
+      "order": 2,
+      "dimensions": [
+        1672,
+        940
+      ],
+      "sha256": "c9330742ec0d13167eb5adc9d422717b6eacf5bd0742a5bd94fb534b33a30b04"
+    },
+    {
+      "file": "A01_P03_IMG_2682.png",
+      "activity": "A01",
+      "order": 3,
+      "dimensions": [
+        1672,
+        940
+      ],
+      "sha256": "adfe190e505b09ca9236dd9ab86d8893159e78f2482432362d3a998d7f5cbcac"
+    },
+    {
+      "file": "A01_P04_IMG_2687.png",
+      "activity": "A01",
+      "order": 4,
+      "dimensions": [
+        1672,
+        940
+      ],
+      "sha256": "9a541568a000679707fe410473bd6ce334ba3b1ff009261f513058a45e2631e1"
+    },
+    {
+      "file": "A02_P01_IMG_2688.jpeg",
+      "activity": "A02",
+      "order": 1,
+      "dimensions": [
+        1477,
+        1108
+      ],
+      "sha256": "5732941f9b9b960472189352f5754316c91bc891158bb292f5cd7482ba93c99f"
+    },
+    {
+      "file": "A02_P02_IMG_2696.jpeg",
+      "activity": "A02",
+      "order": 2,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "6aac74f497d55b053a9c25edb51d499d710dd24398a98eff84c22250fd8fc8e7"
+    },
+    {
+      "file": "A02_P03_IMG_2689.png",
+      "activity": "A02",
+      "order": 3,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "88a88636a9878d0c6598cf61aef64774b03d3760d97dddbd36df9655bad5d41f"
+    },
+    {
+      "file": "A02_P04_IMG_2692.jpeg",
+      "activity": "A02",
+      "order": 4,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "54bbd4a11852d322752ebe2f2744682633f182013a908241dacdbd2ab31989af"
+    },
+    {
+      "file": "A03_P01_IMG_2710.png",
+      "activity": "A03",
+      "order": 1,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "5477f7770831bfa8ba7d3ece46a0e1aa1859497e38a5dc672e60aad9de563c71"
+    },
+    {
+      "file": "A03_P02_IMG_2700.jpeg",
+      "activity": "A03",
+      "order": 2,
+      "dimensions": [
+        2048,
+        1153
+      ],
+      "sha256": "a09c7c0c963f28b7d242d63812213fe389cff1620f2ee3921de317732a9f06f7"
+    },
+    {
+      "file": "A03_P03_IMG_2704.jpeg",
+      "activity": "A03",
+      "order": 3,
+      "dimensions": [
+        2048,
+        1153
+      ],
+      "sha256": "f80382801be937051ea8e863e331dfe528607d490af2060c5d84fd0e6abfb6a4"
+    },
+    {
+      "file": "A03_P04_IMG_2703.jpeg",
+      "activity": "A03",
+      "order": 4,
+      "dimensions": [
+        2048,
+        1153
+      ],
+      "sha256": "cd160bc4fc14807b6cf0cc48fcec0fec9ce6178adb0072ddd05c717284e338e7"
+    }
+  ]
+}
